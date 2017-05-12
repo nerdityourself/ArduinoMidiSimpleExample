@@ -9,8 +9,11 @@ void MIDI_TX(byte MESSAGE, byte PITCH, byte VELOCITY)
 {
 
   status1 = MESSAGE + midichannel;
+  
   Serial.write(status1);
+  
   Serial.write(PITCH);
+  
   Serial.write(VELOCITY);
   
   }
